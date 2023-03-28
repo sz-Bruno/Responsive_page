@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <img src="./images/4417104_database_icon.png" alt="Logo">
+            <nav class="nav">
+                <div class="buttons_up">
+                    <button class="button_header"><img class='button_icon'src="./images/1904661_building_dashboard_default_home_house_icon (1).png" alt="home"></button>
+                    <button class="button_header"><img class='button_icon'src="./images/4213460_account_avatar_head_person_profile_icon.png" alt="profile"></button>
+                    <button class="button_header"><img class='button_icon'src="./images/185096_settings_icon.png" alt="settings"></button>
+                    <button class="button_header"><img class='button_icon'src="./images/5340267_e_email_letter_mail_icon.png" alt="email"></button>
+                    <button class="button_header"><img class='button_icon'src="./images/4781815_connection_internet_network_send_share_icon.png" alt="connection"></button>
+                </div>
+                <div class="buttons_down">
+                    <button class="button_header"><img class='button_icon'src="./images/211800_play_icon.png" alt="play"></button>
+                    <button class="button_header"><img class='button_icon'src="./images/4213460_account_avatar_head_person_profile_icon.png" alt="profile picture"></button>
+                    <button class="button_header"><img class='button_icon'src="./images/4781843_arrows_chevron_direction_left_move_icon.png" alt="arrow"></button>
+                </div>
+            </nav>
+        </header>
+       
+        <div class="info">
+                <div class="select_area">
+                    <h1>Viewing</h1>
+                    <select name="selecione" id="select">
+                        <option value="option">selecione</option>
+                        <option value="option_two">selecione</option>
+                    </select>
+                    <select name="selecione" id="select_two">
+                        <option value="option_three">selecione</option>
+                        <option value="option_four">selecione</option>
+                    </select>
+                </div>
+                <button class="button_header"><img class='button_icon' src="./images/9056823_close_r_icon.png" alt="close"></button>
+        </div>
+
+        <div class="box">
+            <div class="box_one">
+                <div class="box_session">
+                    <label for="name">Name</label>
+                    <input type="text" name="" id="name" placeholder="First Last Name">
+                </div>
+                <div class="box_session">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="user@email.com">
+                </div>
+                <div class="box_session">
+                    <label for="time">Time zone</label>
+                    <select name="time" id="time" class="time_zone">
+                     <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                     <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                     <option value="-10:00">(GMT -10:00) Hawaii</option>
+                     <option value="-09:50">(GMT -9:30) Taiohae</option>
+                     <option value="-09:00">(GMT -9:00) Alaska</option>
+                     <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                     <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                     <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                     <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                     <option value="-04:50">(GMT -4:30) Caracas</option>
+                     <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                     <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                     <option value="-03:00" selected="selected">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                     <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                     <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                     <option value="+00:00" >(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                     <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                     <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                     <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                     <option value="+03:50">(GMT +3:30) Tehran</option>
+                     <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                     <option value="+04:50">(GMT +4:30) Kabul</option>
+                     <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                     <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                     <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                     <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                     <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                     <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                     <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                     <option value="+08:75">(GMT +8:45) Eucla</option>
+                     <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                     <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                     <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                     <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                     <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                     <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                     <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                     <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                     <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                     <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                    </select>
+                </div>
+                <div class="box_phone">
+                    <div class="box_session_phone">
+                        <label for="phone">Work phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+                    </div>
+                    <div class="box_session_phone">
+                        <label for="extension">Extension</label>
+                        <input type="text" name="extension " id="extension" placeholder="12345">
+                    </div>
+                </div>
+                <div class="box_session">
+                    <label for="area">Area</label>
+                    <input type="text" name="area" id="area" placeholder="Customer Support">
+                </div>
+                <div class="box_session">
+                    <label for="support">Support groups</label>
+                    <input type="text" name="support" id="support" placeholder="Tech Support, Managers">
+                </div>
+                <div class="avatar_session">
+                     <button><img src="./images/8726549_user_square_icon.png" alt="upload">Upload photo</button>
+                     <input type="file" name="file" id="file" >
+                </div>
+                <button class="password_button">Change Password</button>
+                <div class="log_out">
+                     <button >Logout</button>
+                     <div class="log_out_info">
+                        <img src="./images/299086_info_sign_icon.png" alt="information">
+                        <p> To logout, return to the US Data Center</p>
+                     </div>
+                </div>
+            </div>
+            <div class="box_two">
+                <div class="subscribes">
+                    <h1>Email subscribes</h1>
+                    <img src="./images/100300_email_chat_icon.png" alt="mail_chat">
+                 </div>
+                 <div class="services">
+                     <img src="./images/9045061_request_quote_icon.png" alt="services">
+                     <h3>Service requests</h3>
+                 </div>
+                  <div class="check_box">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check"> Created by me</label>
+                  </div>
+                  <div class="check_box">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check"> Assigned to me</label>
+                  </div>
+                 <div class="check_box">
+                   <input type="checkbox" name="check" id="check">
+                   <label for="check"> Assigned to my group</label>
+                 </div>
+                 <div class="check_box">
+                   <input type="checkbox" name="check" id="check">
+                   <label for="check"> Following</label>
+                 </div>
+                 <p>42 is the "Answer to the Ultimate Question of Life, the Universe, and Everything" in The Hitchhiker's Guide to the Galaxy books.</p>
+               </div>
+           </div>
+        </div>  
+</body>
+</html>

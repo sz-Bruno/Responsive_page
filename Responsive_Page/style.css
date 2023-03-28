@@ -1,0 +1,415 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+
+:root{
+    font-size: 62.5%;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "sidebar info info"
+    "sidebar content content"
+    "sidebar content content";
+    grid-template-rows: 9rem auto auto;
+    grid-template-columns: 9rem auto auto;
+}
+
+header{
+    grid-area: sidebar;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:7rem;
+    background-color: #ACD1FF;
+  
+}
+.nav{
+   
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+.button_header{
+    background: none;
+    border: none;
+    
+}
+.button_icon{
+    width: 3rem;
+    opacity: 0.4;
+}
+.button_icon:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: all 0.5s;
+    opacity: 1;
+    
+}
+.buttons_up,.buttons_down{
+    display: flex;
+    flex-direction: column;
+    gap:5rem
+}
+.buttons_down{
+    margin-top: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap:5rem
+}
+.info{
+    padding: 1rem;
+    grid-area: info ;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(47, 98, 156);
+}
+.select_area{
+    width: 100%;
+    display: flex;
+    gap:3rem;
+    color:white;
+    
+}
+.select_area select{
+    border:none ;
+    background: none;
+    color:white;
+    outline: none;
+}
+.box{
+      grid-area: content;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    gap:3rem;
+     
+}
+
+.box_one{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    width: 50%;
+    height: 70rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    gap:2rem;
+}
+.box_session{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    width: 90%;
+}
+.box_session select{
+    width: 85%;
+    height: 4rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    padding:2px;
+    color: grey;
+}
+.box_session input{
+    width: 25rem;
+    height: 4rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    padding:2px;
+}
+.box_phone{
+    display: flex;
+    gap:2rem
+}
+.box_session_phone input{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    width: 90%;
+    height: 4rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    padding:2px;
+    color: grey;
+    
+}
+.avatar_session{
+    position: relative;
+    display: flex;
+   
+}
+.avatar_session img {
+    width: 20px;
+    
+
+}
+.avatar_session button{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    gap:1rem;
+    color: rgb(45, 139, 247);
+    
+}
+.avatar_session input{
+   
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: -3rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.password_button{
+    width: 20rem;
+    padding:1rem;
+    margin: 0 auto;
+    border: 2px solid  #ff073a;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:  #ff073a;
+    cursor: pointer;
+    
+}
+.password_button:hover{
+   
+    transition: all .3s;
+    background-color: #df002dfa;
+    
+    color: rgba(255, 255, 255, 0.959);
+}
+.log_out{
+    display: flex;
+    align-items: center;
+    gap:4rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+   
+}
+.log_out button{
+    background:none;
+    border: 2px solid rgb(214, 205, 205);
+    border-radius: 5px;
+    padding: 2px 4px;
+    font-size: 2rem ;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(167, 162, 162);;
+    align-self: center;
+    
+}
+.log_out button:hover{
+    transform: scale(1.1);
+    transition: all .4s;
+    color:rgb(38, 162, 245);
+    opacity: 1;
+}
+.log_out_info{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap:1rem;
+}
+.log_out_info img{
+    width: 2rem;
+}
+.box_two{
+    background-color: #F5F5F5;
+    width: 50%;
+    height: 50rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+.box_two p{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 5rem;
+    width: 60%;
+    margin:5rem auto
+}
+.subscribes{
+    display: flex;
+  justify-content: center;
+    padding:2rem;
+    align-items: center;
+    gap:1rem;
+    
+
+}
+.subscribes h1{
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+.subscribes img{
+    width: 4rem;
+   
+}
+.services{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    margin-left: 5rem;
+}
+.services img{
+    width: 2rem;
+}
+.check_box{
+    display: flex;
+    font-size: 1.5rem;
+    gap:1rem;
+    justify-content: flex-start;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    
+}
+.check_box input{
+    width: 2rem;
+}
+
+@media(max-width:768px){
+    .page{
+        
+        grid-template-rows: 5rem auto auto;
+        grid-template-columns: 5rem auto auto;
+    }
+    .info{
+        justify-content: space-around;
+    }
+    .select_area{
+        gap:1rem;
+        font-size:11px
+    }
+    .select_area select{
+        
+        font-size: 10px;
+    }
+    .box{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .box_one{
+        
+        width: 70%;
+        height: 75rem;
+        margin-top: 0;
+    }
+    .box_two{
+        
+        width: 70%;
+        
+        
+    }
+    .subscribes,.services,.check_box{
+        width: 90%;
+    }
+    .box_session, .box_session input, .password_button, .log_out{
+        width: 90%;
+    }
+
+    .log_out{
+        display: flex;
+        flex-direction: column;
+        
+        margin-left: 1rem;
+        width: 90%;
+       
+    }
+    @media(max-width:450px){
+        .page{
+        
+            grid-template-rows: 5rem auto auto;
+            grid-template-columns: 5rem auto auto;
+        }
+        .info{
+            padding: 1rem;
+            grid-area: info ;
+            display: flex;
+            align-items: center;
+            gap:5px
+        }
+        
+        .info{
+            justify-content: space-around;
+        }
+        .select_area{
+            gap:1rem;
+            font-size:10px
+        }
+        .select_area select{
+            
+            font-size: 10px;
+        }
+        .box{
+         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+        }
+        .box_one{
+            font-size: 9px;
+            width: 70%;
+            height: 75rem;
+            margin-top: 0;
+        }
+        .box_two{
+            
+            width: 90%;
+            
+            
+        }
+        .subscribes h1{
+            font-size: 2rem;
+        }
+        .subscribes,.services{
+            width: 60%;
+            margin:2px auto
+           
+        }
+        .check_box{
+            margin-left: 3rem;
+        }
+        .box_session, .box_session input, .password_button, .log_out{
+            width: 90%;
+        }
+    
+        .log_out{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3px;
+            margin-left: 1rem;
+            width: 100%;
+           
+        }
+    }
+}
